@@ -17,7 +17,7 @@
         </div>
         <div class="form-floating">
           <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingqdasdInput">Email address</label>
+          <label for="floatingInput">Email address</label>
         </div>
       </form>
     </div>
