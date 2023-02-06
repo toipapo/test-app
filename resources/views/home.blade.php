@@ -11,18 +11,24 @@
   <body>
     <div class="container">
       <div class="login_form">
-        <div class="div">
-          <h1>Login</h1>
+        <div class="login">
+          <h2 class="text-center">
+            Login
+          </h2>
         </div>
         <form class="login_form" method="POST">
-          <div class="form-floating">
+          <div class="form-floating my-2">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
           </div>
-          <div class="form-floating">
+          <div class="form-floating my-2">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
           </div>
+          <div class="btn-container d-flex justify-content-center align-self-center">
+            <button type="button" class="btn btn-login">Login ka?</button>
+          </div>
+          
         </form>
       </div>
   

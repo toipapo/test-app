@@ -8,3 +8,18 @@ body {
   align-items: center;
   align-content: center;
 }
+
+.login_form {
+  width: 350px;
+}
+
+.btn-login {
+  border-radius: 50px;
+  background-color: rgb(4, 120, 221);
+}
+
+.container {
+  background-color: rgb(240, 239, 239);
+  padding: 20px;
+  border-radius: 20px;
+}
