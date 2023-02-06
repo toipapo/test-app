@@ -22,7 +22,7 @@
             <label for="floatingInput">Email address</label>
           </div>
           <div class="form-floating my-2">
-            <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="password" class="form-control" id="floatingInput" placeholder="********">
             <label for="floatingInput">Password</label>
           </div>
           <p class = "ms-1">No Account?  <a href="/register" class="link-primary">Register Now!</a></p>
