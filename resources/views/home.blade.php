@@ -4,11 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laravel Test Project</title>
+<<<<<<< HEAD
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+=======
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="{{url('css/app.css')}}" type="text/css" rel="stylesheet">
   
+>>>>>>> 3c7f0647c1472b41b74a9579570ddb6fb9829fd3
   </head>
+
   <body>
+<<<<<<< HEAD
+    <div class="container">
+      <div class="login_form">
+        <div class="div">
+          <h1>Login</h1>
+        </div>
+        <form class="login_form" method="POST">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+        </form>
+      </div>
+=======
     <div class="login_form">
       <form class="login_form" method="POST">
         <div class="form-floating">
@@ -20,6 +44,7 @@
           <label for="floatingInput">Email address</label>
         </div>
       </form>
+>>>>>>> 3c7f0647c1472b41b74a9579570ddb6fb9829fd3
     </div>
   
   
