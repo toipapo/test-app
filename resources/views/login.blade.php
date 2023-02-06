@@ -16,19 +16,19 @@
             Login
           </h2>
         </div>
-        <form class="login_form" method="POST">
+        <form class="login_form" method="GET">
           <div class="form-floating my-2">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
           </div>
           <div class="form-floating my-2">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Password</label>
           </div>
+          <p class = "ms-1">No Account?  <a href="/register" class="link-primary">Register Now!</a></p>
           <div class="btn-container d-flex justify-content-center align-self-center">
-            <button type="button" class="btn btn-login">Login ka?</button>
+            <button type="button" class="btn btn-login">Login</button>
           </div>
-          
         </form>
       </div>
   
