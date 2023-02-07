@@ -1,4 +1,4 @@
-body {
+.body-login {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8,6 +8,11 @@ body {
   align-items: center;
   align-content: center;
 }
+
+/* .body-dashboard {
+  display: flex;
+  margin-left: 10px;
+} */
 
 .login_form {
   width: 350px;

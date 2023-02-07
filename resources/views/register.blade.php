@@ -8,7 +8,7 @@
     <link href="/css/app.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="body-login">
     <div class="container">
       <div class="login_form">
         <div class="login">
