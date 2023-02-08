@@ -27,6 +27,11 @@
             <input type="password" class="form-control" id="floatingInput" placeholder="********">
             <label for="floatingInput">Password</label>
           </div>
+          <div class = "ms-1">
+            <label for="remember">
+              <input type="checkbox" name="remember" id="remember"> Remember Me
+            </label>
+          </div>
           <p class = "ms-1">No Account?  <a href="/register" class="link-primary">Register Now!</a></p>
           <div class="btn-container d-flex justify-content-center align-self-center">
             <button type="submit" class="btn btn-login">Login</button>

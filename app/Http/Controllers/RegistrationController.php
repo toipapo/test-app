@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class RegistrationController extends Controller
 {   
@@ -23,6 +24,9 @@ class RegistrationController extends Controller
             'email' => 'required',
             'password' => 'required',
         ]);
+
+        $request->merge(['password' => Hash::make($request->input('password'))]);
+
         User::latest()->create($request->all());
         return redirect('register');
     }
