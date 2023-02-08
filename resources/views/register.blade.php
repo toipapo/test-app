@@ -16,17 +16,19 @@
             Register
           </h2>
         </div>
-        <form action="{{ route('register.store') }}"class="login_form" method="GET">
+        <form action="{{ route('register.store') }}" class="login_form" method="POST">
+          @csrf
+          @method('POST')
           <div class="form-floating my-2">
-            <input type="text" class="form-control" id="name" placeholder="Blaire Kalubihon">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Blaire Kalubihon">
             <label for="name">Name</label>
           </div>
           <div class="form-floating my-2">
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
             <label for="email">Email address</label>
           </div>
           <div class="form-floating my-2">
-            <input type="password" class="form-control" id="password" placeholder="*********">
+            <input type="password" class="form-control" name="password" id="password" placeholder="*********">
             <label for="password">Password</label>
           </div>
           <div class="btn-container d-flex justify-content-center align-self-center">
