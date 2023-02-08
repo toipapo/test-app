@@ -16,21 +16,21 @@
             Register
           </h2>
         </div>
-        <form class="login_form" method="GET">
+        <form action="{{ route('register.store') }}"class="login_form" method="GET">
           <div class="form-floating my-2">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Blaire Kalubihon">
-            <label for="floatingInput">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Blaire Kalubihon">
+            <label for="name">Name</label>
           </div>
           <div class="form-floating my-2">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <label for="email">Email address</label>
           </div>
           <div class="form-floating my-2">
-            <input type="password" class="form-control" id="floatingInput" placeholder="*********">
-            <label for="floatingInput">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="*********">
+            <label for="password">Password</label>
           </div>
           <div class="btn-container d-flex justify-content-center align-self-center">
-            <button type="submit" class="btn btn-login">Register</button>
+            <button type="submit" style="cursor:pointer" class="btn btn-login">Register</button>
           </div>
         </form>
       </div>

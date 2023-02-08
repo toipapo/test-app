@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\RegistrationController;
 
-/*
+
+/*  
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -24,3 +26,5 @@ Route::get('/register', function () {
 
 
 Route::resource('products', ProductController::class);
+Route::resource('register', RegistrationController::class);
+
