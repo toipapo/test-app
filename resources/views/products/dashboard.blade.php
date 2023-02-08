@@ -7,14 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <link href="/css/app.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
   </head>
-
-  <body class="body-dashboard">
-    <div class="container2">
       <div class="d-flex justify-content-center align-items-center p-5">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProduct">
           Add Product
         </button>
       </div>
+  <body class="body-dashboard">
+    <div class="container2">
+      
       <div class="modal fade" id="addProduct" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -53,6 +53,8 @@
       
       <table class="table table-bordered d-flex mx-auto justify-content-center align-items-center">
       <tr>
+                    <!-- TAE -->
+
           <th style="display:none;"></th>
           <th>Product Name</th>
           <th>Brand Name</th>
@@ -61,6 +63,7 @@
         </tr>
         @foreach ($products as $product)
         <tr>
+
           <td style="display:none;">{{  $product->id  }}</td>
           <td>{{  $product->prod_name  }}</td>
           <td>{{  $product->brand_name  }}</td>
@@ -121,7 +124,7 @@
       </table>
     </div>
 
-    <!-- <div class="modal fade" id="editProduct" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+   {{--  <div class="modal fade" id="editProduct" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -156,7 +159,7 @@
           </form>
         </div>
       </div>
-    </div>   -->
+    </div>    --}}
     
   
   </body>
