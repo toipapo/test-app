@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\UserAccount;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class RegistrationController extends Controller
@@ -23,7 +23,7 @@ class RegistrationController extends Controller
             'email' => 'required',
             'password' => 'required',
         ]);
-        UserAccount::create($request->all());
+        User::latest()->create($request->all());
         return redirect('register');
     }
 }
