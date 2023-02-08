@@ -14,7 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::latest()->paginate(5);
+        $products = Product::paginate(5);
         return view('products.dashboard', compact('products'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -37,7 +37,16 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'prod_name' => 'required',
+            'brand_name' => 'required',
+            'price' => 'required',
+        ]);
+
+        Product::create($request->all());
+        $products=Product::all();
+        // return view('products.dashboard', ['products'=>$products])->with('flash_message', 'Product Added!');
+        return redirect('products')->with('flash_message', 'Product Added!');
     }
 
     /**
@@ -69,9 +78,18 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'prod_name' => 'required',
+            'brand_name' => 'required',
+            'price' => 'required',
+        ]);
+
+        $product = Product::findOrFail($id);
+        $input = $request->all();
+        $product->update($input);
+        return redirect('products')->with('flash_message', 'Contact Updated!');
     }
 
     /**
@@ -82,6 +100,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+        return redirect('products')->with('flash_message','Product Deleted!');
     }
 }

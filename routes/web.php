@@ -22,4 +22,5 @@ Route::get('/register', function () {
     return view('register');
 });
 
+
 Route::resource('products', ProductController::class);

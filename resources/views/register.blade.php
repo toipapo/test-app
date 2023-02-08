@@ -18,7 +18,7 @@
         </div>
         <form class="login_form" method="GET">
           <div class="form-floating my-2">
-            <input type="string" class="form-control" id="floatingInput" placeholder="Blaire Kalubihon">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Blaire Kalubihon">
             <label for="floatingInput">Name</label>
           </div>
           <div class="form-floating my-2">
@@ -30,7 +30,7 @@
             <label for="floatingInput">Password</label>
           </div>
           <div class="btn-container d-flex justify-content-center align-self-center">
-            <button type="button" class="btn btn-login">Register</button>
+            <button type="submit" class="btn btn-login">Register</button>
           </div>
         </form>
       </div>
