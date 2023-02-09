@@ -28,3 +28,7 @@ Route::get('/register', function () {
 Route::resource('products', ProductController::class);
 Route::resource('register', RegistrationController::class);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
